@@ -1,0 +1,62 @@
+/* Diseñar el elemento Body, es decir, Color,
+        Fuente, Alineación */
+        body {
+            background-color: #8799B0 ;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+/* Aplicar estilo al formulario (color, relleno, sombra) */
+        form {
+            background-color: #C5C3AF;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+/* Clase de control de formulario de estilo*/
+        .form-group {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+/* Etiqueta de control de formulario de estilo */
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+/* Estilo de entrada de control de formulario,
+        seleccionar, área de texto */
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            border: 1px solid #CF352A;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+/* Radio de control de forma de estilo
+        botón y casilla de verificación */
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+/* Botón de estilo */
+        button {
+            background-color: #CF2A3B;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }

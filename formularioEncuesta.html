@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="encuesta.css" />
+
+</head>
+  
+<body>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Servicios de Gran Hotel</h1>
+         <p id="description" class="description text-center">
+          Gracias por tomarse el tiempo para ayudarnos a mejorar nuestro servicio.
+        </p>
+        <h2 id="description" class="description text-center">
+          Formulario de encuesta de satisfacción
+        </h2>
+
+       
+      </header>
+      
+  
+  
+<!-- Crear formulario -->
+   
+  <form id="survey-form">
+
+<!-- Nombre -->
+
+    <div class="form-group">
+        <label 
+            id="name-label" 
+            for="name">
+                Nombre
+        </label>    
+ 
+<!-- Tipo de entrada de texto -->
+
+        <input 
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Introduzca su nombre"
+            required
+        />
+     </div>
+
+<!-- Correo electrónico -->
+
+    <div class="form-group">
+        <label 
+            id="email-label" 
+            for="email">
+                Email
+        </label>
+ 
+<!-- Tipo de entrada Correo electrónico -->
+        <input 
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Introduzca su email"
+            required
+        />
+    </div>
+  
+<!-- Edad -->
+    
+    <div class="form-group">
+        <label 
+            id="number-label" 
+            for="number">
+                Años
+        <span class="clue">
+                (opcional)
+        </span>
+        </label>     
+        
+<!-- Tipo de entrada numérico -->
+         <input
+            type="number"
+            name="age"
+            id="number"
+            min="15"
+            max="110"
+            class="form-control"
+            placeholder="Introduzca su edad"
+          />
+    </div>
+  
+
+<!-- Qué opción te describe mejor? -->
+
+    <div class="form-group">
+        
+        <label
+            for="role" 
+            id="label-role">
+                ¿Qué opción te describe mejor?
+        </label>
+
+<!-- Opciones desplegables (dropdown)-->
+
+<select id="dropdown" name="mostLike" class="form-control" required>
+<option disabled selected value="">Seleccione una opción</option>
+
+        <option
+            value="asiduo">
+                Cliente asiduo
+        </option>
+    
+        <option 
+            value="esporádico">
+                Cliente esporádico
+        </option>
+    
+        <option 
+            value="primeraVez">
+                Cliente por primera vez
+        </option>
+                
+        <option 
+            value="otro">
+                Otro
+        </option>
+</select>
+
+    </div>
+  
+<!-- Recomendación -->
+
+    <div class="form-group">
+        <label>
+                ¿Recomendarías Gran Hotel
+                a un amigo?
+        </label>
+ 
+<!-- Botón de opción de tipo de entrada -->
+        <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed"
+                       value="1">
+                            Sí
+                </input>
+        </label>
+
+        <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed"
+                       value="2">
+                            No
+                </input>
+        </label>
+
+        <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed"
+                       value="3">
+                            Quizás
+                </input>
+        </label>
+
+    </div>
+
+
+<!-- Mayor agrado  --> 
+
+    <div class="form-group">
+      
+    <p>Servicios utilizados de mayor agrado 
+     <small><span class="clue">(Marque todo lo que corresponda)
+        
+        </span></small>     
+    </p>  
+      
+       
+<!-- Tipo de entrada Casilla de verificación  -->
+           
+    <label>
+        <input
+            name="prefer"
+            value="spa"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Spa
+    </label>
+    
+    
+    <label>
+        <input
+            name="prefer"
+            value="gimnasio"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Gimnasio
+    </label>
+    
+    
+    <label>
+        <input
+            name="prefer"
+            value="restaurante"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Restaurante
+    </label>
+    
+    
+    <label>
+        <input
+            name="prefer"
+            value="discoteca"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Discoteca
+    </label>
+    
+
+    <label>
+        <input
+            name="prefer"
+            value="software-de-gestión"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Software de gestión
+    </label>
+
+    
+    <label>
+        <input
+            name="prefer"
+            value="tecnología-móvil"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Tecnología móvil
+    </label>
+   
+    <label>
+        <input
+            name="prefer"
+            value="wifi"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Wifi
+    </label>
+    
+
+    <label>
+        <input
+            name="prefer"
+            value="piscina"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Piscina
+    </label>
+
+
+    <label>
+        <input
+            name="prefer"
+            value="snack-bar"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Snack bar
+    </label>
+
+    <label>
+        <input
+            name="prefer"
+            value="lavandería"
+            type="checkbox"
+            class="input-checkbox"/> 
+                    Lavandería
+    </label>   
+
+</div>
+  
+
+<!-- Comentario --> 
+
+<div class="form-group">
+        <p>¿Algún comentario o sugerencia?</p>
+ 
+<!-- Area de texto de varias líneas -->
+
+    <textarea
+        id="comment" 
+        class="input-textarea"
+        name="comment" 
+        placeholder="Escriba su comentario aquí..."></textarea>
+</div>
+  
+<!-- Control de entrada de texto de varias líneas (Botón ENVIAR) -->
+    
+<div class="form-group">
+        <button 
+            type="submit" 
+            id="submit" 
+            class="boton-enviar">
+                Enviar
+        </button>
+
+</div>
+
+</form>
+</div>
+
+</body>
+  
+</html>
